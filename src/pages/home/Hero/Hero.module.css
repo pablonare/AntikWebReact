@@ -1,0 +1,7 @@
+.hero {
+  min-height: calc(100vh - var(--header-height));
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

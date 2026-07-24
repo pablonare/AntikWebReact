@@ -1,0 +1,14 @@
+.brand {
+
+  text-decoration: none;
+
+  color: var(--color-primary);
+
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
