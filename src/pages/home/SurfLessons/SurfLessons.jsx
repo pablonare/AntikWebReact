@@ -2,6 +2,8 @@ import Container from "../../../components/ui/Container/Container";
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
 import LessonsImage from "../../../assets/images/index/lessons.webp";
 
+import lessons from "./lessons";
+import Accordion from "../../../components/ui/Accordion/Accordion";
 import styles from "./SurfLessons.module.css";
 
 
@@ -10,7 +12,7 @@ function SurfLessons() {
     <section className={styles.section}>
       <Container>
 
-        <SplitSection reverse>
+        <SplitSection reverse={true}>
 
           <div className={styles.media}>
             <img 
@@ -32,6 +34,7 @@ function SurfLessons() {
               in-water practice, and personalized corrections.
             </p>
 
+            <Accordion items={lessons} /> 
 
           </div>
 

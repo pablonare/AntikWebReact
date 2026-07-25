@@ -5,3 +5,10 @@
     align-items: stretch;
 }
 
+.reverse {
+    direction: rtl;
+}
+
+.reverse > * {
+    direction: ltr;
+}
