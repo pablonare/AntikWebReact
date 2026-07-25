@@ -1,0 +1,8 @@
+/* patterns.css */
+
+.section-title {
+    margin-bottom: 18px;
+    color: var(--color-primary);
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    line-height: 0.96;
+}
