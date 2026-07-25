@@ -28,7 +28,7 @@ function SurfLessons() {
               Surf Lessons
             </h2>
 
-            <p className={styles.description}>
+            <p className="section-subtitle">
               Our surf lessons are designed for all levels, from beginners 
               to experienced surfers. Each session includes theory, 
               in-water practice, and personalized corrections.

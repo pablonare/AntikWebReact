@@ -1,0 +1,76 @@
+.footer {
+    position: relative;
+
+    margin-top: 4rem;
+    padding: 1rem 0 2rem;
+
+    overflow: hidden;
+
+    border-top: 1px solid var(--color-border);
+
+    background-color: #343434;
+    color: #ffffff;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+ 
+}
+
+.backgroundLogo {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 10rem;
+    height: auto;
+
+    opacity: 0.5;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.bottom {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 5rem;
+    padding-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid var(--color-border);
+}
+
+/* CONTACTOS */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact a {
+    display: block;
+
+    margin-bottom: 0.75rem;
+
+    color: var(--color-white);
+    text-decoration: none;
+
+    line-height: 1.6;
+}
+
+.contact a:hover {
+    color: var(--color-secondary);
+}

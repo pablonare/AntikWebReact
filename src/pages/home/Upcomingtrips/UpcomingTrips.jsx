@@ -24,7 +24,7 @@ function UpcomingTrips() {
               Upcoming Surftrips 2026
             </h2>
 
-            <p className={styles.subtitle}>
+            <p className="section-subtitle">
               Join our Surf Trips in Asilah, Morocco
             </p>
 
