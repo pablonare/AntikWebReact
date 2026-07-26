@@ -1,6 +1,7 @@
 import Container from "../../../components/ui/Container/Container";
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
 import LessonsImage from "../../../assets/images/index/lessons.webp";
+import Button from "../../../components/ui/Button/Button";
 
 import lessons from "./lessons";
 import Accordion from "../../../components/ui/Accordion/Accordion";
@@ -36,6 +37,14 @@ function SurfLessons() {
 
             <Accordion items={lessons} /> 
 
+            <div className={styles.actions}>
+ 
+              <Button variant="primary">
+                Book Surf Lessons
+              </Button>
+
+            </div>
+             
           </div>
 
         </SplitSection>

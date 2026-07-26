@@ -1,23 +1,21 @@
-import Header from "./components/layout/Header/Header";
-import Hero from "./pages/home/Hero/Hero";
-import Intro from "./pages/home/Intro/Intro";
-import SurfLessons from "./pages/home/SurfLessons/SurfLessons";
-import UpcomingTrips from "./pages/home/Upcomingtrips/UpcomingTrips";
-import Rentals from "./pages/home/Rentals/Rentals"; 
+import { Routes, Route } from "react-router-dom";
+
+import "./styles/reset.css";
+import "./styles/variables.css";
+import "./styles/typography.css";
+import "./styles/globals.css";
+import "./styles/utilities.css";
 import "./styles/patterns.css";
-import Footer from "./components/layout/Footer/Footer";
+
+import Home from "./pages/home/Home";
+import SurfTrips from "./pages/surftrips/SurfTrips";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Intro />
-      <UpcomingTrips />
-      <SurfLessons />
-      <Rentals />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/surftrips" element={<SurfTrips />} />
+    </Routes>
   );
 }
 

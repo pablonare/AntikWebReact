@@ -1,6 +1,7 @@
 import Container from "../../../components/ui/Container/Container";
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
 import surftripsImage from "../../../assets/images/common/surftrips.webp";
+import Button from "../../../components/ui/Button/Button";
 
 import trips from "./Trips";
 import styles from "./UpcomingTrips.module.css";
@@ -56,6 +57,17 @@ function UpcomingTrips() {
                     </span>
                   </p>
                 ))}
+
+                <div className={styles.actions}>
+                  <Button variant="secondary">
+                    More Info
+                  </Button>
+
+                  <Button variant="primary">
+                    Book Now
+                  </Button>
+                  
+                </div>
               </div>
           </div>
         </SplitSection>

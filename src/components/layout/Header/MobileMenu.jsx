@@ -3,6 +3,8 @@ import styles from "./MobileMenu.module.css";
 import MenuIcon from "../../ui/Icon/MenuIcon";
 import CloseIcon from "../../ui/Icon/CloseIcon";
 
+import { Link } from "react-router-dom";
+
 function MobileMenu() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -70,9 +72,7 @@ function MobileMenu() {
             Rentals
           </a>
 
-          <a href="/surftrips">
-            Trips
-          </a>
+          <Link to="/surftrips">Surf Trips</Link>
 
           <a href="/shop">
             Shop

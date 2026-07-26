@@ -1,0 +1,42 @@
+.card {
+    overflow: hidden;
+
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+
+    background: var(--card-paper);
+
+    box-shadow: var(--card-shadow);
+
+    transition: 
+    transform var(--card-transition-fast),
+    box-shadow var(--card-transition-fast);
+}
+
+
+.card:hover {
+    box-shadow: var(--card-shadow-strong);
+    transform: translateY(-8px);
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 3.2 / 3;
+    object-fit: cover;
+}
+
+.body {
+    padding: 1.5rem;
+}
+
+.title {
+    margin: 0;
+}
+
+.date {
+    font-size: 0.9rem;
+}
+
+.meta {
+    margin-top: 1rem;
+}

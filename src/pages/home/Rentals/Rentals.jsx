@@ -2,6 +2,7 @@ import Container from "../../../components/ui/Container/Container";
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
 import RentalsImage from "../../../assets/images/index/rentals.webp";
 import RentalPricesImage from "../../../assets/images/index/rentals-prices.webp";
+import Button from "../../../components/ui/Button/Button";
 
 import styles from "./Rentals.module.css";
 
@@ -36,6 +37,12 @@ function Rentals() {
                 src={RentalPricesImage}
                 alt="Surfboard rentals"
             />
+
+            <div className={styles.actions}>
+              <Button variant="primary">
+                Contact Us 
+              </Button>
+            </div>
 
           </div>
 

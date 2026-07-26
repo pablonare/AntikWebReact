@@ -17,3 +17,7 @@
     object-fit: cover;
     display: block;
 }
+
+.actions {
+    margin-top: 2rem;
+}
