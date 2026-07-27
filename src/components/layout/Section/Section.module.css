@@ -6,15 +6,8 @@
 .md    { padding-block: 48px; }
 
 @media (max-width: 768px) {
-  .sm {
-    padding-block: calc(var(--space-section-sm) * 0.7);
-  }
-
   .md {
-    padding-block: calc(var(--space-section-md) * 0.8);
+    padding-block: calc(var(--space-section-md) * 1.8);
   }
 
-  .lg {
-    padding-block: calc(var(--space-section-lg) * 0.7);
-  }
 }
