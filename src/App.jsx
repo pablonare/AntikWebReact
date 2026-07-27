@@ -9,13 +9,18 @@ import "./styles/patterns.css";
 
 import Home from "./pages/home/Home";
 import SurfTrips from "./pages/surftrips/SurfTrips";
+import WhatsAppButton from "./components/ui/WhatsAppButton/WhatsAppButton";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/surftrips" element={<SurfTrips />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/surftrips" element={<SurfTrips />} />
+      </Routes>
+
+      <WhatsAppButton />
+    </>
   );
 }
 

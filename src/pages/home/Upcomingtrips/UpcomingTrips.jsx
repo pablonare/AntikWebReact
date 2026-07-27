@@ -1,7 +1,10 @@
 import Container from "../../../components/ui/Container/Container";
+import Section from "../../../components/layout/Section/Section";
+
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
 import surftripsImage from "../../../assets/images/common/surftrips.webp";
 import Button from "../../../components/ui/Button/Button";
+import { Link } from "react-router-dom";
 
 import trips from "./Trips";
 import styles from "./UpcomingTrips.module.css";
@@ -10,7 +13,7 @@ function UpcomingTrips() {
   console.log(trips[0]);
 
   return (
-    <section className={styles.section}>
+    <Section>
       <Container>
         <SplitSection>
           <div className={styles.media}>
@@ -59,12 +62,13 @@ function UpcomingTrips() {
                 ))}
 
                 <div className={styles.actions}>
-                  <Button variant="secondary">
-                    More Info
+                  
+                  <Button as={Link} to="/surftrips" variant="secondary">
+                    More info
                   </Button>
 
-                  <Button variant="primary">
-                    Book Now
+                  <Button as="a" href="https://wa.me/212644078565" variant="primary">
+                    Book Now 
                   </Button>
                   
                 </div>
@@ -72,7 +76,7 @@ function UpcomingTrips() {
           </div>
         </SplitSection>
       </Container>
-    </section>
+    </Section>
   );
 }
 

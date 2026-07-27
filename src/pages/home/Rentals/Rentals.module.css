@@ -13,3 +13,13 @@
     object-fit: cover;
     display: block;
 }
+
+.contentImage {
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .media {
+        min-height: 300px;
+    }
+}

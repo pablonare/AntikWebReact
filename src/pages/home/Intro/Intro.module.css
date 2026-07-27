@@ -5,7 +5,8 @@
 
 .intro p {
   max-width: 800px;
-  margin: 0 auto;
+  
+  margin: 48px auto 0 auto;
 
   text-align: center;
 

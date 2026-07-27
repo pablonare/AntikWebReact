@@ -1,19 +1,19 @@
 import Container from "../../../components/ui/Container/Container";
 import trips from "./Trips";
 import TripCard from "./components/TripCard";
-
+import Section from "../../../components/layout/Section/Section";
 import styles from "./UpcomingTrips.module.css";
 
 function UpcomingTrips() {
   return (
-    <section className={styles.upcoming}>
+    <Section> 
       <Container>
 
         <p className="section-kicker">
           Upcoming Surf Trips
         </p>
 
-        <h2 className="section-title">
+        <h2 className={`section-title ${styles.title}`}>
           Choose your dates and secure your spot early
         </h2>
 
@@ -27,7 +27,7 @@ function UpcomingTrips() {
         </div>
 
       </Container>
-    </section>
+    </Section>
   );
 }
 

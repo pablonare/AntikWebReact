@@ -21,3 +21,9 @@
 .actions {
     margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+    .media {
+        min-height: 300px;
+    }
+}

@@ -3,6 +3,7 @@ import SplitSection from "../../../components/layout/SplitSection/SplitSection";
 import LessonsImage from "../../../assets/images/index/lessons.webp";
 import Button from "../../../components/ui/Button/Button";
 
+
 import lessons from "./lessons";
 import Accordion from "../../../components/ui/Accordion/Accordion";
 import styles from "./SurfLessons.module.css";
@@ -39,7 +40,7 @@ function SurfLessons() {
 
             <div className={styles.actions}>
  
-              <Button variant="primary">
+              <Button as="a" href="https://wa.me/212644078565" variant="primary">
                 Book Surf Lessons
               </Button>
 

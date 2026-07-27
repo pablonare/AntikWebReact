@@ -12,3 +12,14 @@
 .reverse > * {
     direction: ltr;
 }
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .reverse {
+        direction: ltr;
+    }
+}

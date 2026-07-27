@@ -1,4 +1,6 @@
 import Container from "../../../components/ui/Container/Container";
+import Section from "../../../components/layout/Section/Section";
+
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
 import RentalsImage from "../../../assets/images/index/rentals.webp";
 import RentalPricesImage from "../../../assets/images/index/rentals-prices.webp";
@@ -8,7 +10,7 @@ import styles from "./Rentals.module.css";
 
 function Rentals() {
   return (
-    <section className={styles.section}>
+    <Section>
       <Container>
 
         <SplitSection reverse={false}>
@@ -39,7 +41,7 @@ function Rentals() {
             />
 
             <div className={styles.actions}>
-              <Button variant="primary">
+              <Button as="a" href="https://wa.me/212644078565" variant="primary">
                 Contact Us 
               </Button>
             </div>
@@ -49,7 +51,7 @@ function Rentals() {
         </SplitSection>
 
       </Container>
-    </section>
+    </Section>
   );
 }
 

@@ -29,15 +29,12 @@ function Hero() {
               View Trips
             </Button>
 
-            <Button 
-              href="https://api.whatsapp.com/send/?phone=212644078565"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Button as="a" href="https://wa.me/212644078565" variant="tertiary">
               Book Now
             </Button>
           </div>
         </div>
+
       </Container>
     </section>
   );

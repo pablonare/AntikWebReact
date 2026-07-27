@@ -69,3 +69,16 @@
     margin-top: 2rem;
     flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+
+    .tripList {
+        margin: 0 0;
+    }
+    .media {
+        min-height: 300px;
+    }
+    .actions {
+        justify-content: center;
+    }
+}

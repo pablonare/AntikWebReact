@@ -2,28 +2,26 @@ import styles from "./Button.module.css";
 
 function Button({
   children,
-  href,
+  as,
   variant = "primary",
   size = "medium",
+  ...rest
 }) {
+  const Component = as || (rest.href ? "a" : "button");
+
   const className = `
     ${styles.button}
     ${styles[variant]}
     ${styles[size]}
   `;
 
-  if (href) {
-    return (
-      <a href={href} className={className}>
-        {children}
-      </a>
-    );
-  }
+  const safety =
+    rest.target === "_blank" ? { rel: "noopener noreferrer" } : {};
 
   return (
-    <button className={className}>
+    <Component className={className} {...safety} {...rest}>
       {children}
-    </button>
+    </Component>
   );
 }
 

@@ -1,4 +1,5 @@
 import Container from "../../ui/Container/Container";
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/common/logo-antik.png";
 import styles from "./Footer.module.css";
 
@@ -18,12 +19,13 @@ function Footer() {
 
                 <div className={styles.content}>
 
-                    <nav className={styles.navigation}>
+                    <nav className={styles.column}>
                         <h3 className={styles.heading}>Explore</h3>
-                        {/* enlaces */}
+                        <Link to="/">Home</Link>
+                        <Link to="/surftrips">Trips</Link>
                     </nav>
 
-                    <section className={styles.contact}>
+                    <section className={styles.column}>
                         <h3 className={styles.heading}>Contact</h3>
 
                         <a href="mailto:antiksurfclub@gmail.com">
@@ -43,10 +45,16 @@ function Footer() {
                         </a>
                     </section>
 
-                    <address className={styles.location}>
+                    <address className={styles.column}>
                         <h3 className={styles.heading}>Location</h3>
-
-                        <p>Asilah, Morocco</p>
+                        
+                        <a
+                            href="https://www.google.com/maps/place/Antik+Surf+Club/@35.4655711,-6.0431202,17z/data=!3m1!4b1!4m6!3m5!1s0xd0b94e43dec7599:0xab1e76071e16bc12!8m2!3d35.4655668!4d-6.0405453!16s%2Fg%2F11gh48n4qx?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Rue Ben marzouk, Asilah, Morocco
+                        </a>
                     </address>
               </div>
 

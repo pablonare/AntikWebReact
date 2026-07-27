@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./MobileMenu.module.css";
 import MenuIcon from "../../ui/Icon/MenuIcon";
 import CloseIcon from "../../ui/Icon/CloseIcon";
+import Brand from "../../ui/Brand/Brand"; // ajusta la ruta
 
 import { Link } from "react-router-dom";
 
@@ -62,17 +63,17 @@ function MobileMenu() {
         </button>
 
 
+        <div className={styles.menuBrand}>
+            <Brand />
+        </div>
+
         <nav className={styles.navigation}>
 
-          <a href="#surf-lessons">
-            Lessons
-          </a>
-
-          <a href="#surf-rental">
-            Rentals
-          </a>
-
-          <Link to="/surftrips">Surf Trips</Link>
+          <Link to="/">
+            Home <span className="nav__subtitle">| Lessons & Rentals</span>
+          </Link>
+         
+          <Link to="/surftrips">Trips</Link>
 
           <a href="/shop">
             Shop

@@ -29,7 +29,6 @@
     max-width: 700px;
 
     padding-bottom: 3rem;
-    padding-left: 3rem;
 }
 
 .actions {
@@ -41,4 +40,22 @@
 
 .title {
     color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-bottom: 28px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions > * {
+        width: 100%;
+    }
+
+    .hero {
+    background-size: 100% 100%;
+    }
 }
