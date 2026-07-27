@@ -7,7 +7,7 @@ import ScrollToTop from "./components/scrolltop/ScrollTop.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/AntikWebReact">
       <ScrollToTop />
       <App />
     </BrowserRouter>
