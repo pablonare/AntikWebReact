@@ -23,6 +23,7 @@ function Footer() {
                         <h3 className={styles.heading}>Explore</h3>
                         <Link to="/">Home</Link>
                         <Link to="/surftrips">Trips</Link>
+                        <Link to="/shop">Shop</Link>
                     </nav>
 
                     <section className={styles.column}>

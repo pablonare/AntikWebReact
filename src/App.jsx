@@ -9,6 +9,8 @@ import "./styles/patterns.css";
 
 import Home from "./pages/home/Home";
 import SurfTrips from "./pages/surftrips/SurfTrips";
+import Shop from "./pages/shop/Shop";
+
 import WhatsAppButton from "./components/ui/WhatsAppButton/WhatsAppButton";
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/surftrips" element={<SurfTrips />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
 
       <WhatsAppButton />
