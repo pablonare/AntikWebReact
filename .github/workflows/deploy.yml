@@ -27,6 +27,8 @@ jobs:
 
       - run: npm install
       - run: npm run build
+        env:
+          VITE_PUBLIC_BASE: /AntikWebReact/
 
       - uses: actions/upload-pages-artifact@v3
         with:
