@@ -21,7 +21,7 @@ function Accommodation() {
         </header>
 
         <p className="section-subtitle">
-          We stay at Dhar Ambrossia, a charming traditional house just 100
+          We stay at Antik Riad, a charming traditional house just 100
           meters from the surf club. It becomes the meeting point for
           breakfasts, planning, rest after surf sessions and the community
           rhythm of the whole trip.

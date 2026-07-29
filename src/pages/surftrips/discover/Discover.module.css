@@ -1,8 +1,8 @@
 .content {
     align-self: start;
 }
-
-.media {
+    
+.media img{
     display: grid;
     align-self: start;
 

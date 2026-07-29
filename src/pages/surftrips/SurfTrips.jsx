@@ -7,6 +7,7 @@ import Accommodation from "./accommodation/Accommodation";
 import SurfSpots from "./surfspots/SurfSpots";
 import Equipment from "./equipment/Equipment";
 import Studio from "./studio/Studio";
+import Discover from "./discover/Discover";
 import Faq from "./faq/Faq";
 import Cta from "./cta/Cta";
 
@@ -21,6 +22,7 @@ function SurfTrips() {
       <SurfSpots />
       <Equipment />
       <Studio />
+      <Discover/>
       <Faq />
       <Cta />
       <Footer />

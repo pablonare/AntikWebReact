@@ -12,7 +12,7 @@ function Included() {
 
         <ul className={styles.list}>
           <li>Accommodation</li>
-          <li>Meals</li>
+          <li>Meals (breakfast, lunch and dinner) </li>
           <li>Beach Transport</li>
           <li>Surf Lessons & Equipment</li>
           <li>Classic Studio</li>

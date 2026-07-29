@@ -20,10 +20,12 @@ function Studio() {
             </h2>
 
             <p className="section-subtitle">
-              Issam from Classic Studio will join us on this incredible
-              experience, capturing the most memorable moments of the trip so
-              you come back with photos and videos of your fantastic
-              adventure.
+              Capture the experience.<br></br><br></br> 
+              Issam from Classic Studio is part of our team and joins us 
+              throughout the trip alongside our surf coaches. He'll be capturing 
+              the best moments in and out of the water, so you'll head home with 
+              professional photos and videos of an unforgettable trip
+
             </p>
 
           </div>
