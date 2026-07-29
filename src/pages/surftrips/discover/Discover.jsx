@@ -11,15 +11,7 @@ function Discover() {
     <Section>
       <Container>
 
-        <SplitSection reverse={false}>
-
-          <div className={styles.media}>
-            <img
-              className={styles.image}
-              src={discoverImage}
-              alt="Textures and architecture in Asilah"
-            />
-          </div>
+        <SplitSection reverse={true}>
 
           <div className={styles.content}>
 
@@ -40,7 +32,14 @@ function Discover() {
               the sunset over the Atlantic. It's peaceful, authentic and full of 
               character, the kind of place that turns a surf trip into a complete experience.
             </p>
+          </div>
 
+          <div className={styles.media}>
+            <img
+              className={styles.image}
+              src={discoverImage}
+              alt="Textures and architecture in Asilah"
+            />
           </div>
 
         </SplitSection>
