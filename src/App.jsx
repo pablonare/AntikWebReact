@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Navigate, Routes, Route } from "react-router-dom";
 
 import "./styles/reset.css";
 import "./styles/variables.css";
@@ -22,6 +22,8 @@ function App() {
         <Route path="/surftrips" element={<SurfTrips />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/AntikWebReact" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
       <WhatsAppButton />
