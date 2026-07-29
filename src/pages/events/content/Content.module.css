@@ -1,0 +1,100 @@
+.content p {
+  max-width: 1000px;
+  
+  margin: 48px auto 48px auto;
+
+  text-align: center;
+
+  font-size: clamp(1rem, 2vw, 4rem);
+
+  line-height: 1.6;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+}
+
+.media img {
+  display: block;
+  height: 600px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.gallery {
+
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  overflow-y: visible;   /* opcional: por claridad, aunque no cambia el comportamiento forzado */
+  padding-block: 10px;
+  scroll-snap-type: x proximity;
+
+}
+
+.gallery img {
+  
+  flex: 0 0 calc((100% - 54px) / 2);
+  width: auto;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+
+}
+
+.gallery img:first-child {
+  object-position: center bottom;
+}
+
+.final p {
+  max-width: 1000px;
+  
+  margin: 48px auto 48px auto;
+
+  padding: 10px;
+
+  text-align: center;
+
+  font-size: clamp(1rem, 2vw, 4rem);
+
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+  .gallery {
+    position: relative;
+    display: block;
+    height: 420px;
+    overflow: hidden;
+  }
+
+  .gallery img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: galleryFade 10s infinite;
+  }
+
+  .gallery img:first-child {
+    animation-delay: 0s;
+  }
+
+  .gallery img:last-child {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes galleryFade {
+  0%, 45% {
+    opacity: 1;
+  }
+
+  50%, 100% {
+    opacity: 0;
+  }
+}

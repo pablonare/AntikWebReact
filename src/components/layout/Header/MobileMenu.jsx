@@ -74,7 +74,7 @@ function MobileMenu() {
           </Link>
          
           <Link to="/surftrips">Trips</Link>
-
+          <Link to="/events">Events</Link>
           <Link to="/shop">Shop</Link>
 
         </nav>
