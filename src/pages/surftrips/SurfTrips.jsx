@@ -10,10 +10,20 @@ import Studio from "./studio/Studio";
 import Discover from "./discover/Discover";
 import Faq from "./faq/Faq";
 import Cta from "./cta/Cta";
+import { Helmet } from "react-helmet-async";
 
 function SurfTrips() {
   return (
     <>
+      <Helmet>
+        <title>Surf Trips in Asilah, Morocco | Antik Surf Club</title>
+        <meta
+          name="description"
+          content="Surf trips in Asilah, Morocco with small groups, local guides, accommodation, surf lessons, cultural experiences and direct booking via Antik Surf Club."
+        />
+        <link rel="canonical" href="https://antiksurf.com/surftrips" />
+      </Helmet>
+
       <Header />
       <Hero />
       <UpcomingTrips />
