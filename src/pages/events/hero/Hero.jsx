@@ -16,8 +16,8 @@ function Hero() {
         </div>
           
         <div className={styles.gallery}>
-          <img src={AtlantikCanos} alt="" />
           <img src={AtlantikAsilah} alt="" />
+          <img src={AtlantikCanos} alt="" />
           <img src={AtlantikHendaya} alt="" />
         </div>
           
