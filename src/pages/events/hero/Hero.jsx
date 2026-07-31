@@ -1,9 +1,8 @@
 import Container from "../../../components/ui/Container/Container";
 import styles from "./Hero.module.css";
 
-import AtlantikCanos from "../../../assets/images/events/atlantik/atlantik-canos.webp";
-import AtlantikAsilah from "../../../assets/images/events/atlantik/atlantik-asilah.webp";
-import AtlantikHendaya from "../../../assets/images/events/atlantik/atlantik-hendaya.webp";
+import AtlantikCover from "../../../assets/images/events/atlantik/coveratlantik.webp";
+import AtlantikVideo from "../../../../public/videos/atlantik.webm";
 
 function Hero() {
   return (
@@ -14,13 +13,17 @@ function Hero() {
           <h1 className="section-title">ATLANTIK</h1>
           <h2>Un pequeño film rodado en asilah</h2>
         </div>
-          
-        <div className={styles.gallery}>
-          <img src={AtlantikAsilah} alt="" />
-          <img src={AtlantikCanos} alt="" />
-          <img src={AtlantikHendaya} alt="" />
-        </div>
-          
+
+        <video
+          src={AtlantikVideo}
+          className= {styles.gallery}
+          controls
+          loop
+          playsInline
+          poster={AtlantikCover}
+        ></video>
+        
+        
       </section>
     </Container>
   );

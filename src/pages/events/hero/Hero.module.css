@@ -18,38 +18,20 @@
 }
 
 .gallery {
-
   display: flex;
-  gap: 18px;
-  overflow-x: auto;
-  overflow-y: visible;   /* opcional: por claridad, aunque no cambia el comportamiento forzado */
-  padding-block: 10px;
-  scroll-snap-type: x proximity;
+  object-position: center;
+  margin-inline: auto;
+  width: auto;
+  height: 80vh;
+  object-fit: cover;
 
 }
-
-.gallery img {
-  
-  flex: 0 0 calc((100% - 54px) / 3);
-  min-width: 220px;
-  min-height: 340px;
-  display: block;
-
-}
-
 
 @media (max-width: 768px) {
 
   .gallery {
-    flex-direction: column;
-    gap: 1rem;
-    overflow-x: visible;
+    height: 42vh;
+    max-height: 420px;
   }
 
-  .image {
-  flex: none;
-  width: 100%;
-  min-width: 0;
-  min-height: 260px; /* o la altura que prefieras */
-  }
 }

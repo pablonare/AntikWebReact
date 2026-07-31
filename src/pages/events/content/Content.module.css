@@ -10,17 +10,26 @@
   line-height: 1.6;
 }
 
-.media {
+.media{
+
   display: flex;
-  justify-content: center;
+  gap: 18px;
+  overflow-x: auto;
+  overflow-y: visible;   /* opcional: por claridad, aunque no cambia el comportamiento forzado */
+  padding-block: 10px;
+  scroll-snap-type: x proximity;
+
 }
 
 .media img {
+  
+  flex: 0 0 calc((100% - 54px) / 3);
+  min-width: 220px;
+  min-height: 340px;
   display: block;
-  height: 600px;
-  object-fit: cover;
-  object-position: center bottom;
+
 }
+
 
 .gallery {
 
@@ -30,6 +39,7 @@
   overflow-y: visible;   /* opcional: por claridad, aunque no cambia el comportamiento forzado */
   padding-block: 10px;
   scroll-snap-type: x proximity;
+  padding-bottom: 60px;
 
 }
 

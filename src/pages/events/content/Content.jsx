@@ -1,9 +1,12 @@
 import Container from "../../../components/ui/Container/Container";
 import styles from "./Content.module.css";
 
-import AtlantikImage1 from "../../../assets/images/events/atlantik/atlantik-1.JPG";
-import AtlantikImage2 from "../../../assets/images/events/atlantik/atlantik-2.JPG";
-import AtlantikImage3 from "../../../assets/images/events/atlantik/atlantik-3.JPG";
+import AtlantikImage1 from "../../../assets/images/events/atlantik/atlantik-1.webp";
+import AtlantikImage2 from "../../../assets/images/events/atlantik/atlantik-2.webp";
+
+import AtlantikAsilah from "../../../assets/images/events/atlantik/atlantik-asilah.webp";
+import AtlantikCanos from "../../../assets/images/events/atlantik/atlantik-canos.webp";
+import AtlantikHendaya from "../../../assets/images/events/atlantik/atlantik-hendaya.webp"; 
 
 function Content() {
   return (
@@ -13,14 +16,17 @@ function Content() {
         <p>
           El pasado invierno, los shapers Peta Surfboards, Longwinter y Adrokultura 
           se reunieron en Assilah, el pueblo donde nació y sigue creciendo nuestro 
-          proyecto Antik Surf Club. Una localidad costera reconocida por su esencia 
-          artística, su tradición pesquera y su profunda conexión con el océano Atlántico.
+          proyecto Antik Surf Club. De ese encuentro nació ATLANTIK, una película que 
+          captura una misma forma de entender la creación de tablas, el surf y la vida alrededor
+          del océano.
         </p>
       </div>
-
+      
       <div className={styles.media}>
-        <img src={AtlantikImage3} alt="Imagen de shaper reunidos"/>
-      </div>
+       <img src={AtlantikAsilah} alt="" />
+        <img src={AtlantikCanos} alt="" />
+        <img src={AtlantikHendaya} alt="" />
+      </div> 
 
       <div className={styles.content}>
         <p>
@@ -31,11 +37,6 @@ function Content() {
           mutuamente y disfrutar del simple hecho de compartir tiempo entre amigos,
           unidos por una misma forma de entender el surf. 
         </p>
-      </div>
-
-      <div className={styles.gallery}>
-        <img src={AtlantikImage2} alt="Imagen de shaper reunidos"/>
-        <img src={AtlantikImage1} alt="Imagen de shaper reunidos"/>
       </div>
 
       <div className={styles.content}>
@@ -56,6 +57,12 @@ function Content() {
           creyendo que el surf debe permanecer en manos de surfistas.
         </p> 
       </div>
+
+      <div className={styles.gallery}>
+        <img src={AtlantikImage2} alt="Imagen de shaper reunidos"/>
+        <img src={AtlantikImage1} alt="Imagen de shaper reunidos"/>
+      </div>
+
       
     </Container>
   );
