@@ -61,9 +61,14 @@ function Footer() {
                     </address>
               </div>
 
-                <div className={styles.bottom}>
-                    <p>© 2026 Antik Surf Club</p>
-                </div>
+              <div className={styles.bottom}>
+                   <p>
+                        © 2026 Antik Surf Club · Website designed & developed by{" "}
+                        <a href="https://nalabsolutions.com" target="_blank" rel="noopener noreferrer">
+                        Nalabs
+                        </a>
+                    </p>
+              </div>
 
             </Container>
 
